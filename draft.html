@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoL Pro Draft Overlay</title>
+    <link rel="stylesheet" href="shared.css">
+</head>
+<body class="transparent-bg">
+    <div class="bottom-overlay">
+        
+        <!-- ROW 1: Bans & Coaches -->
+        <div class="ban-row">
+            <div class="team-bans blue-side">
+                <div class="coach-plate blue-accent" id="blue-coach-plate">COACH: <span id="blue-coach">COACH</span></div>
+                <div class="ban-container" id="blue-bans"></div>
+            </div>
+            
+            <div class="team-bans red-side">
+                <div class="ban-container" id="red-bans"></div>
+                <div class="coach-plate red-accent" id="red-coach-plate">COACH: <span id="red-coach">COACH</span></div>
+            </div>
+        </div>
+
+        <!-- ROW 2: Picks & Center Hub -->
+        <div class="pick-row">
+            <div class="pick-container" id="blue-picks"></div>
+            
+            <div class="center-hub">
+                <div class="sponsor-top" id="sponsor-text">PURDUE FORT WAYNE ESPORTS</div>
+                <div class="matchup-info">
+                    <div class="team-logo" id="blue-logo">PFW</div>
+                    <div class="team-logo" id="red-logo">OPP</div>
+                </div>
+                <div class="patch-info" id="patch-version">NACE Week 1</div>
+            </div>
+
+            <div class="pick-container" id="red-picks"></div>
+        </div>
+        
+    </div>
+
+    <script src="connection.js"></script>
+</body>
+</html>

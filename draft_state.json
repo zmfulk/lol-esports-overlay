@@ -1,0 +1,61 @@
+{
+    "patch": "NACE Week 1",
+    "sponsor": "PURDUE FORT WAYNE ESPORTS",
+    "ddragon_version": "16.17.1",
+    "show_coaches": false,
+    "blue": {
+        "name": "DBR",
+        "coach": "COACH",
+        "score": 0,
+        "players": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "picks": [
+            "None",
+            "None",
+            "None",
+            "None",
+            "None"
+        ],
+        "bans": [
+            "None",
+            "None",
+            "None",
+            "None",
+            "None"
+        ],
+        "use_champ_names": true
+    },
+    "red": {
+        "name": "BIG5",
+        "coach": "COACH",
+        "score": 0,
+        "players": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "picks": [
+            "None",
+            "None",
+            "None",
+            "None",
+            "None"
+        ],
+        "bans": [
+            "None",
+            "None",
+            "None",
+            "None",
+            "None"
+        ],
+        "use_champ_names": true
+    },
+    "show_spells": true
+}
