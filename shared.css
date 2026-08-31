@@ -21,6 +21,31 @@ body {
     flex-direction: column;
 }
 
+.team-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 190px; /* Gives a bit more breathing room for larger logos */
+}
+
+/* Static box container with increased size */
+.logo-box {
+    width: 170px;
+    height: 160px; /* Increased height and width container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.team-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Keeps any shape logo cleanly inside the box without stretching */
+}
+
 /* --- BAN ROW --- */
 .ban-row {
     display: flex;
@@ -111,11 +136,20 @@ body {
     z-index: 2;
 }
 
+.spell-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 4px; 
+    z-index: 2;
+}
+
 .spell {
-    width: 30px;
-    height: 30px;
-    background: #222;
-    border: 1px solid #555;
+    width: 26px;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: 1px solid #444;
 }
 
 /* --- CENTER HUB --- */
@@ -151,4 +185,47 @@ body {
     color: #888;
     font-size: 18px;
     letter-spacing: 1px;
+}
+
+/* --- CHAMPION REVEAL ANIMATIONS --- */
+@keyframes popReveal {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.9); 
+        filter: brightness(1.5) blur(4px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1); 
+        filter: brightness(1) blur(0);
+    }
+}
+
+.animate-reveal {
+    animation: popReveal 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* --- ACTIVE PICK PULSING GLOW (TEAM COLORS) --- */
+@keyframes pulseGlowBlue {
+    0% { box-shadow: 0 0 5px rgba(10, 91, 232, 0.4), inset 0 0 10px rgba(10, 91, 232, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(10, 91, 232, 0.9), inset 0 0 30px rgba(10, 91, 232, 0.5); border-color: #0a5be8; }
+    100% { box-shadow: 0 0 5px rgba(10, 91, 232, 0.4), inset 0 0 10px rgba(10, 91, 232, 0.2); }
+}
+
+@keyframes pulseGlowRed {
+    0% { box-shadow: 0 0 5px rgba(232, 10, 10, 0.4), inset 0 0 10px rgba(232, 10, 10, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(232, 10, 10, 0.9), inset 0 0 30px rgba(232, 10, 10, 0.5); border-color: #e80a0a; }
+    100% { box-shadow: 0 0 5px rgba(232, 10, 10, 0.4), inset 0 0 10px rgba(232, 10, 10, 0.2); }
+}
+
+.is-picking-blue {
+    animation: pulseGlowBlue 1.5s infinite ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+
+.is-picking-red {
+    animation: pulseGlowRed 1.5s infinite ease-in-out;
+    position: relative;
+    z-index: 10;
 }

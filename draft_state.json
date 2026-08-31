@@ -3,10 +3,12 @@
     "sponsor": "PURDUE FORT WAYNE ESPORTS",
     "ddragon_version": "16.17.1",
     "show_coaches": false,
+    "show_spells": false,
     "blue": {
-        "name": "DBR",
-        "coach": "COACH",
+        "name": "OPP",
+        "coach": "",
         "score": 0,
+        "use_champ_names": true,
         "players": [
             "",
             "",
@@ -15,47 +17,91 @@
             ""
         ],
         "picks": [
-            "None",
-            "None",
-            "None",
-            "None",
-            "None"
+            "Aatrox",
+            "Hecarim",
+            "Ahri",
+            "Thresh",
+            "Yunara"
         ],
         "bans": [
-            "None",
-            "None",
-            "None",
-            "None",
-            "None"
+            "Teemo",
+            "Malzahar",
+            "Mel",
+            "Lux",
+            "Anivia"
         ],
-        "use_champ_names": true
+        "spells": [
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ]
+        ],
+        "logo": "red_logo.png"
     },
     "red": {
-        "name": "BIG5",
-        "coach": "COACH",
+        "name": "PFW",
+        "coach": "",
         "score": 0,
+        "use_champ_names": true,
         "players": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "TOP",
+            "JNG",
+            "MID",
+            "ADC",
+            "SUP"
         ],
         "picks": [
-            "None",
-            "None",
-            "None",
-            "None",
-            "None"
+            "Nasus",
+            "Kayn",
+            "Ziggs",
+            "Pantheon",
+            "Jinx"
         ],
         "bans": [
-            "None",
-            "None",
-            "None",
-            "None",
-            "None"
+            "Amumu",
+            "Seraphine",
+            "Sylas",
+            "Ambessa",
+            "Jhin"
         ],
-        "use_champ_names": true
-    },
-    "show_spells": true
+        "spells": [
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ],
+            [
+                "None",
+                "None"
+            ]
+        ],
+        "logo": "blue_logo.png"
+    }
 }
