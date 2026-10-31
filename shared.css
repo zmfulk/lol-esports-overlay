@@ -81,7 +81,7 @@ body {
 .ban-slot {
     width: 60px;
     height: 60px;
-    background: #1a1a1a;
+    background: rgba(0, 0, 0, 0.9);
     border: 1px solid #333;
 }
 
@@ -89,7 +89,7 @@ body {
 .pick-row {
     display: flex;
     height: 320px; 
-    background: #050505;
+    background: rgba(0, 0, 0, 0.9);
     border-top: 4px solid #333;
 }
 
